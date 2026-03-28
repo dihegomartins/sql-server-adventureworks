@@ -8,28 +8,30 @@ Repositório de exercícios práticos em T-SQL (Microsoft SQL Server) utilizando
 - **Filtros condicionais:** Aplicação de lógica com `WHERE`, `AND`, `OR` para segmentação de dados.
 - **Operadores avançados:** Consultas utilizando `BETWEEN` para períodos, `IN` para listas e `LIKE` para busca de padrões.
 - **Ordenação e Limitação:** Manipulação de resultados com `ORDER BY` e a cláusula `TOP` para rankings.
-- **Agregações e Agrupamentos:** Cálculos estatísticos com `COUNT`, `SUM`, `AVG`, `MIN`, `MAX` e a cláusula `GROUP BY`.
+- **Agregações e Agrupamentos:** Cálculos estatísticos com `COUNT`, `SUM`, `AVG`, `MIN`, `MAX` e `GROUP BY`.
 - **Tipagem de Dados:** Manipulação de tipos específicos do SQL Server como `NVARCHAR(50)`, `MONEY`, `INT` e `DECIMAL(8,2)`.
 
 ---
 
-## 🚀 Como Testar (Interactive Demo)
+## 📊 Validação e Execução
 
-Você pode testar as queries deste repositório online:
+Os scripts deste repositório foram desenvolvidos e validados no ambiente **Microsoft SQL Server Management Studio (SSMS)**.
 
-1. Acesse o [SQLize.online](https://sqlize.online/).
-2. No menu de linguagens (lado esquerdo), selecione **SQL Server**.
-3. No painel de **Schema/Setup**, cole o conteúdo do arquivo [`01-basics/setup.sql`](./01-basics/setup.sql).
-4. No painel de **Query**, cole qualquer uma das queries dos desafios presentes nas pastas.
-5. Clique em **Execute** para ver os resultados em tempo real.
+### Como reproduzir localmente:
+
+1. Certifique-se de ter o **SQL Server** instalado em sua máquina.
+2. Execute o arquivo [`01-basics/setup.sql`](./01-basics/setup.sql) para criar a estrutura de tabelas (`Person`, `Product`) e popular com dados de teste.
+3. Navegue pelas pastas `/02-filtering` e `/03-aggregations` para executar os scripts de desafio.
+
+> **Nota Técnica:** Optou-se pela validação em ambiente local (SSMS) para garantir o suporte total a recursos avançados de T-SQL e tipos de dados monetários, evitando limitações de permissões comuns em compiladores SQL online.
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **Microsoft SQL Server (T-SQL):** Linguagem principal para manipulação de banco de dados relacionais.
-- **SQL Server Management Studio (SSMS):** Interface utilizada para administração e execução de scripts.
-- **Git & GitHub:** Versionamento profissional utilizando o padrão **Conventional Commits**.
+- **Microsoft SQL Server (T-SQL):** Engine de banco de dados.
+- **SQL Server Management Studio (SSMS):** IDE de desenvolvimento e administração.
+- **Git & GitHub:** Versionamento profissional com **Conventional Commits**.
 
 ---
 
