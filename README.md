@@ -19,18 +19,18 @@ Os scripts deste repositório foram desenvolvidos e validados no ambiente **Micr
 
 ### Como reproduzir localmente:
 
-1. Certifique-se de ter o **SQL Server** instalado em sua máquina.
-2. Execute o arquivo [`01-basics/setup.sql`](./01-basics/setup.sql) para criar a estrutura de tabelas (`Person`, `Product`) e popular com dados de teste.
-3. Navegue pelas pastas `/02-filtering` e `/03-aggregations` para executar os scripts de desafio.
+1. **Criar Banco de Dados:** No SSMS, crie um novo banco de dados (ex: `EstudosSQL`).
+2. **Executar Setup:** Execute o arquivo [`01-basics/setup.sql`](./01-basics/setup.sql) para criar automaticamente os schemas (`Person`, `Production`), as tabelas e popular os dados de teste.
+3. **Desafios:** Navegue pelas pastas `/02-filtering` e `/03-aggregations` para executar os scripts de cada desafio técnico.
 
-> **Nota Técnica:** Optou-se pela validação em ambiente local (SSMS) para garantir o suporte total a recursos avançados de T-SQL e tipos de dados monetários, evitando limitações de permissões comuns em compiladores SQL online.
+> **Nota Técnica:** Optou-se pela validação em ambiente local (SSMS) para garantir o suporte total a recursos avançados de T-SQL, gerenciamento de Schemas e tipos de dados monetários, evitando as limitações de permissão comuns em compiladores SQL online.
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **Microsoft SQL Server (T-SQL):** Engine de banco de dados.
-- **SQL Server Management Studio (SSMS):** IDE de desenvolvimento e administração.
+- **Microsoft SQL Server (T-SQL):** Engine de banco de dados e linguagem de consulta.
+- **SQL Server Management Studio (SSMS):** Interface de administração e desenvolvimento.
 - **Git & GitHub:** Versionamento profissional com **Conventional Commits**.
 
 ---

@@ -1,3 +1,17 @@
+/* SETUP SCRIPT - ADVENTUREWORKS MOCK
+   Instruções:
+   1. Abra o SSMS e conecte-se à sua instância.
+   2. Crie um novo banco de dados (ex: 'EstudosSQL') ou use um existente.
+   3. Execute este script para gerar as tabelas Person e Product.
+*/
+
+-- Opcional: Garante que as tabelas sejam criadas no schema correto se existirem
+IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'Person')
+    BEGIN EXEC('CREATE SCHEMA Person') END;
+
+IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'Production')
+    BEGIN EXEC('CREATE SCHEMA Production') END;
+
 -- Criando as tabelas simplificadas para compatibilidade web
 CREATE TABLE Person (
     BusinessEntityID INT PRIMARY KEY,
